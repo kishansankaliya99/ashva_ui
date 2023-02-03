@@ -1,0 +1,101 @@
+* {
+    // padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.mainPage {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.Leftside {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+
+    .innerpage {
+        color: rgb(50, 141, 194);
+        text-align: center;
+        justify-content: center;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+.Rightside {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+    .innerpage {
+        color: black;
+        text-align: center;
+        height: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    justify-content: center;
+    width: 328px;
+    ;
+}
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(166, 166, 226);
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: aqua;
+
+}
+
+.loginbtn {
+    display: block;
+    width: 100%;
+    background-color: rgb(93, 93, 226);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (min-width:900px) {
+
+    .mainPage {
+        height: 100vh;
+    }
+
+    .Leftside {
+        height: 100vh;
+    }
+
+    .Rightside {
+        height: 100vh;
+    }
+
+}
